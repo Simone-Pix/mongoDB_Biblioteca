@@ -1,0 +1,283 @@
+{
+  "autori_sample": [
+    {
+      "_id": "ObjectId('64a1b2c3d4e5f6789abcdef0')",
+      "nome": "Alessandro",
+      "cognome": "Manzoni",
+      "data_nascita": "1785-03-07T00:00:00Z",
+      "data_morte": "1873-05-22T00:00:00Z",
+      "nazionalita": "Italiana",
+      "biografia": "Scrittore e poeta italiano del romanticismo, autore de I Promessi Sposi"
+    },
+    {
+      "_id": "ObjectId('64a1b2c3d4e5f6789abcdef1')",
+      "nome": "Italo",
+      "cognome": "Calvino",
+      "data_nascita": "1923-10-15T00:00:00Z",
+      "data_morte": "1985-09-19T00:00:00Z",
+      "nazionalita": "Italiana",
+      "biografia": "Scrittore e giornalista italiano, importante figura della letteratura del Novecento"
+    },
+    {
+      "_id": "ObjectId('64a1b2c3d4e5f6789abcdef2')",
+      "nome": "Umberto",
+      "cognome": "Eco",
+      "data_nascita": "1932-01-05T00:00:00Z",
+      "data_morte": "2016-02-19T00:00:00Z",
+      "nazionalita": "Italiana",
+      "biografia": "Scrittore, filosofo, medievalista e semiologo italiano"
+    }
+  ],
+  
+  "libri_sample": [
+    {
+      "_id": "ObjectId('64a1b2c3d4e5f6789abcdef3')",
+      "titolo": "I Promessi Sposi",
+      "autore_id": "ObjectId('64a1b2c3d4e5f6789abcdef0')",
+      "isbn": "978-88-17-12345-1",
+      "anno_pubblicazione": 1827,
+      "genere": "Romanzo storico",
+      "editore": "Feltrinelli",
+      "pagine": 720,
+      "copie_totali": 5,
+      "copie_disponibili": 3,
+      "descrizione": "Capolavoro della letteratura italiana ambientato nella Lombardia del XVII secolo"
+    },
+    {
+      "_id": "ObjectId('64a1b2c3d4e5f6789abcdef4')",
+      "titolo": "Il Barone Rampante",
+      "autore_id": "ObjectId('64a1b2c3d4e5f6789abcdef1')",
+      "isbn": "978-88-06-12345-2",
+      "anno_pubblicazione": 1957,
+      "genere": "Narrativa",
+      "editore": "Einaudi",
+      "pagine": 280,
+      "copie_totali": 3,
+      "copie_disponibili": 2,
+      "descrizione": "Secondo romanzo della trilogia I nostri antenati, storia fantastica di Cosimo"
+    },
+    {
+      "_id": "ObjectId('64a1b2c3d4e5f6789abcdef5')",
+      "titolo": "Il Nome della Rosa",
+      "autore_id": "ObjectId('64a1b2c3d4e5f6789abcdef2')",
+      "isbn": "978-88-45-12345-3",
+      "anno_pubblicazione": 1980,
+      "genere": "Giallo storico",
+      "editore": "Bompiani",
+      "pagine": 550,
+      "copie_totali": 4,
+      "copie_disponibili": 1,
+      "descrizione": "Romanzo giallo ambientato in un monastero medievale del XIV secolo"
+    },
+    {
+      "_id": "ObjectId('64a1b2c3d4e5f6789abcdef6')",
+      "titolo": "Se una notte d'inverno un viaggiatore",
+      "autore_id": "ObjectId('64a1b2c3d4e5f6789abcdef1')",
+      "isbn": "978-88-06-12345-7",
+      "anno_pubblicazione": 1979,
+      "genere": "Metanarrativa",
+      "editore": "Einaudi",
+      "pagine": 320,
+      "copie_totali": 2,
+      "copie_disponibili": 2,
+      "descrizione": "Romanzo postmoderno che gioca con le convenzioni narrative"
+    }
+  ],
+  
+  "utenti_sample": [
+    {
+      "_id": "ObjectId('64a1b2c3d4e5f6789abcdef7')",
+      "nome": "Mario",
+      "cognome": "Rossi",
+      "email": "mario.rossi@email.com",
+      "codice_fiscale": "RSSMRA80A01H501Z",
+      "telefono": "+39 320 1234567",
+      "data_registrazione": "2023-01-15T10:30:00Z",
+      "attivo": true
+    },
+    {
+      "_id": "ObjectId('64a1b2c3d4e5f6789abcdef8')",
+      "nome": "Giulia",
+      "cognome": "Bianchi",
+      "email": "giulia.bianchi@email.com",
+      "codice_fiscale": "BNCGLI85B42F205X",
+      "telefono": "+39 345 7890123",
+      "data_registrazione": "2023-03-22T14:15:00Z",
+      "attivo": true
+    },
+    {
+      "_id": "ObjectId('64a1b2c3d4e5f6789abcdef9')",
+      "nome": "Luca",
+      "cognome": "Verdi",
+      "email": "luca.verdi@email.com",
+      "codice_fiscale": "VRDLCU90C15G224Y",
+      "telefono": "+39 366 4567890",
+      "data_registrazione": "2023-05-10T09:45:00Z",
+      "attivo": true
+    },
+    {
+      "_id": "ObjectId('64a1b2c3d4e5f6789abcdefa')",
+      "nome": "Anna",
+      "cognome": "Neri",
+      "email": "anna.neri@email.com",
+      "codice_fiscale": "NRENNA88D52H501W",
+      "telefono": "+39 338 9876543",
+      "data_registrazione": "2023-02-28T16:20:00Z",
+      "attivo": false
+    }
+  ],
+  
+  "prestiti_sample": [
+    {
+      "_id": "ObjectId('64a1b2c3d4e5f6789abcdefb')",
+      "libro_id": "ObjectId('64a1b2c3d4e5f6789abcdef3')",
+      "utente_id": "ObjectId('64a1b2c3d4e5f6789abcdef7')",
+      "data_prestito": "2024-05-15T10:00:00Z",
+      "data_scadenza": "2024-06-14T10:00:00Z",
+      "data_restituzione": "2024-06-10T15:30:00Z",
+      "utente_nome": "Mario Rossi",
+      "utente_email": "mario.rossi@email.com",
+      "stato": "restituito",
+      "note": "Restituito in perfette condizioni"
+    },
+    {
+      "_id": "ObjectId('64a1b2c3d4e5f6789abcdefc')",
+      "libro_id": "ObjectId('64a1b2c3d4e5f6789abcdef5')",
+      "utente_id": "ObjectId('64a1b2c3d4e5f6789abcdef8')",
+      "data_prestito": "2024-06-20T14:30:00Z",
+      "data_scadenza": "2024-07-20T14:30:00Z",
+      "data_restituzione": null,
+      "utente_nome": "Giulia Bianchi",
+      "utente_email": "giulia.bianchi@email.com",
+      "stato": "attivo",
+      "note": "Prestito in corso"
+    },
+    {
+      "_id": "ObjectId('64a1b2c3d4e5f6789abcdefd')",
+      "libro_id": "ObjectId('64a1b2c3d4e5f6789abcdef4')",
+      "utente_id": "ObjectId('64a1b2c3d4e5f6789abcdef9')",
+      "data_prestito": "2024-04-10T11:15:00Z",
+      "data_scadenza": "2024-05-10T11:15:00Z",
+      "data_restituzione": null,
+      "utente_nome": "Luca Verdi",
+      "utente_email": "luca.verdi@email.com",
+      "stato": "scaduto",
+      "note": "Prestito scaduto - da contattare utente"
+    },
+    {
+      "_id": "ObjectId('64a1b2c3d4e5f6789abcdefe')",
+      "libro_id": "ObjectId('64a1b2c3d4e5f6789abcdef3')",
+      "utente_id": "ObjectId('64a1b2c3d4e5f6789abcdef8')",
+      "data_prestito": "2024-06-25T09:00:00Z",
+      "data_scadenza": "2024-07-25T09:00:00Z",
+      "data_restituzione": null,
+      "utente_nome": "Giulia Bianchi",
+      "utente_email": "giulia.bianchi@email.com",
+      "stato": "attivo",
+      "note": "Secondo prestito dello stesso utente"
+    }
+  ],
+  
+  "query_examples": {
+    "trova_libri_autore": {
+      "descrizione": "Trova tutti i libri di un autore specifico",
+      "query": "db.libri.find({'autore_id': ObjectId('64a1b2c3d4e5f6789abcdef1')})"
+    },
+    
+    "prestiti_attivi_utente": {
+      "descrizione": "Trova prestiti attivi per un utente",
+      "query": "db.prestiti.find({'utente_id': ObjectId('64a1b2c3d4e5f6789abcdef8'), 'stato': 'attivo'})"
+    },
+    
+    "libri_disponibili_genere": {
+      "descrizione": "Trova libri disponibili per genere",
+      "query": "db.libri.find({'genere': 'Narrativa', 'copie_disponibili': {$gt: 0}})"
+    },
+    
+    "prestiti_in_scadenza": {
+      "descrizione": "Trova prestiti in scadenza nei prossimi 3 giorni",
+      "query": "db.prestiti.find({'stato': 'attivo', 'data_scadenza': {$lte: new Date(Date.now() + 3*24*60*60*1000)}})"
+    },
+    
+    "join_libri_autori": {
+      "descrizione": "Join tra libri e autori con aggregation",
+      "aggregation": [
+        {
+          "$lookup": {
+            "from": "autori",
+            "localField": "autore_id",
+            "foreignField": "_id",
+            "as": "autore"
+          }
+        },
+        {"$unwind": "$autore"},
+        {
+          "$project": {
+            "titolo": 1,
+            "isbn": 1,
+            "autore_nome": {"$concat": ["$autore.nome", " ", "$autore.cognome"]},
+            "copie_disponibili": 1
+          }
+        }
+      ]
+    },
+    
+    "statistiche_prestiti_autore": {
+      "descrizione": "Statistiche prestiti raggruppate per autore",
+      "aggregation": [
+        {
+          "$lookup": {
+            "from": "libri",
+            "localField": "libro_id",
+            "foreignField": "_id",
+            "as": "libro"
+          }
+        },
+        {"$unwind": "$libro"},
+        {
+          "$lookup": {
+            "from": "autori",
+            "localField": "libro.autore_id",
+            "foreignField": "_id",
+            "as": "autore"
+          }
+        },
+        {"$unwind": "$autore"},
+        {
+          "$group": {
+            "_id": "$autore._id",
+            "nome_autore": {"$first": {"$concat": ["$autore.nome", " ", "$autore.cognome"]}},
+            "totale_prestiti": {"$sum": 1},
+            "prestiti_attivi": {"$sum": {"$cond": [{"$eq": ["$stato", "attivo"]}, 1, 0]}}
+          }
+        },
+        {"$sort": {"totale_prestiti": -1}}
+      ]
+    }
+  },
+  
+  "indexes_schema": {
+    "autori": [
+      {"nome_cognome": {"nome": 1, "cognome": 1}},
+      {"cognome": {"cognome": 1}}
+    ],
+    "libri": [
+      {"autore_id": {"autore_id": 1}},
+      {"isbn": {"isbn": 1, "unique": true}},
+      {"titolo": {"titolo": 1}},
+      {"genere": {"genere": 1}}
+    ],
+    "utenti": [
+      {"email": {"email": 1, "unique": true}},
+      {"codice_fiscale": {"codice_fiscale": 1, "unique": true}},
+      {"cognome": {"cognome": 1}}
+    ],
+    "prestiti": [
+      {"utente_id": {"utente_id": 1}},
+      {"libro_id": {"libro_id": 1}},
+      {"data_prestito": {"data_prestito": -1}},
+      {"data_scadenza": {"data_scadenza": 1}},
+      {"stato": {"stato": 1}}
+    ]
+  }
+}
